@@ -2,11 +2,11 @@ name: Go
 
 on:
   push:
-    branches: [ master ]
+    branches: [ run_my_way ]
   pull_request:
-    branches: [ master ]
+    branches: [ run_my_way ]
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '33 23 * * *'
 
 jobs:
 
