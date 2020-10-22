@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ run_my_way ]
   schedule:
-    - cron: '33 23 * * *'
+    - cron: '33 8,23 * * *'
 
 jobs:
 
@@ -31,4 +31,5 @@ jobs:
       env:
         USERNAME: ${{ secrets.USERNAME }}
         PASSWORD: ${{ secrets.PASSWORD }}
+        FT_SCKEY: ${{ secrets.FT_SCKEY }}
       run: ./autosubmit
