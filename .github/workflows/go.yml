@@ -6,7 +6,9 @@ on:
   pull_request:
     branches: [ run_my_way, feature ]
   schedule:
-    - cron: '33 8,23 * * *'
+  # 早上8点和晚上9点33分进行打卡
+    - cron: '33 0,13 * * *' 
+
 
 jobs:
 
