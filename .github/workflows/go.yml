@@ -2,9 +2,9 @@ name: Go
 
 on:
   push:
-    branches: [ run_my_way ]
+    branches: [ run_my_way, feature ]
   pull_request:
-    branches: [ run_my_way ]
+    branches: [ run_my_way, feature ]
   schedule:
     - cron: '33 8,23 * * *'
 
