@@ -560,9 +560,9 @@ func main() {
 	email, lxdh = getSqzt(sid)
 	if inGithubActions() && !*single {
 		if isMorning() {
-			submitOut(sid)
-		} else {
 			submitIn(sid)
+		} else {
+			submitOut(sid)
 		}
 	} else {
 		submitOut(sid)
